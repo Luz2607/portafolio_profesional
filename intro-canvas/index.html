@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Animaciones 2D & 3D</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="bg-dark-hero">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black-90 shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Introducción a Canvas / WebGL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Demo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#info">Acerca</a></li>
+  
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <header class="py-5 text-center text-light">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Animaciones 2D y 3D Interactivas</h1>
+      <p class="lead text-muted-70">Luces dinámicas, gradientes, partículas y deformaciones. Interacción en tiempo real con el mouse.</p>
+    </div>
+  </header>
+
+  <!-- Grid de tarjetas (6) -->
+  <main class="container pb-5">
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-pro shadow-xl h-100">
+          <div class="card-header-soft">
+            <h5 class="mb-0">1) Disco de gradiente / Cubo con luz móvil</h5>
+          </div>
+          <div class="card-body">
+            <canvas class="canvas2d" data-anim2d="0" width="360" height="300"></canvas>
+            <div class="canvas3d" data-anim3d="0"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-pro shadow-xl h-100">
+          <div class="card-header-soft">
+            <h5 class="mb-0">2) Cinta Bézier reactiva / Esfera con spotlight</h5>
+          </div>
+          <div class="card-body">
+            <canvas class="canvas2d" data-anim2d="1" width="360" height="300"></canvas>
+            <div class="canvas3d" data-anim3d="1"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-pro shadow-xl h-100">
+            <div class="card-header-soft">
+              <h5 class="mb-0">3) Partículas con repulsión / TorusKnot cromático</h5>
+            </div>
+            <div class="card-body">
+              <canvas class="canvas2d" data-anim2d="2" width="360" height="300"></canvas>
+              <div class="canvas3d" data-anim3d="2"></div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-pro shadow-xl h-100">
+          <div class="card-header-soft">
+            <h5 class="mb-0">4) Lissajous con trail / Galaxia de puntos</h5>
+          </div>
+          <div class="card-body">
+            <canvas class="canvas2d" data-anim2d="3" width="360" height="300"></canvas>
+            <div class="canvas3d" data-anim3d="3"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-pro shadow-xl h-100">
+          <div class="card-header-soft">
+            <h5 class="mb-0">5) Isométricos ilusorios / Ico deformado</h5>
+          </div>
+          <div class="card-body">
+            <canvas class="canvas2d" data-anim2d="4" width="360" height="300"></canvas>
+            <div class="canvas3d" data-anim3d="4"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-pro shadow-xl h-100">
+          <div class="card-header-soft">
+            <h5 class="mb-0">6) Eclipse con glow / Malla instanciada</h5>
+          </div>
+          <div class="card-body">
+            <canvas class="canvas2d" data-anim2d="5" width="360" height="300"></canvas>
+            <div class="canvas3d" data-anim3d="5"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Sección info -->
+  <section id="info" class="py-5 text-center">
+    <div class="container">
+      <p class="text-muted-70 mb-0">Pasa el mouse sobre las tarjetas para acelerar las animaciones. Mueve el mouse dentro de cada canvas para interactuar.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="py-4 text-center text-light bg-black-90">
+    &copy; 2025 Derechos reservados — Programador: Luz María Cruz García
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
